@@ -1,4 +1,5 @@
-<header>
+
+<!-- Remove the inline HTML <header> element -->
 
 <!--
   <<< Author notes: Course header >>>
@@ -56,7 +57,7 @@ _A GitHub Security Lab initiative, providing an in-repo learning experience, whe
 
 ## 🛠️ The set up
 
-#### 🖥️ Using codespaces
+### 🖥️ Using codespaces
 
 All levels are configured to run instantly with GitHub Codespaces. If you chose to use codespaces, be aware that this course **will count towards your 60 hours of monthly free allowance**. For more information about GitHub Codespaces, see the "[GitHub Codespaces overview](https://docs.github.com/en/codespaces/overview)." If you prefer to work locally, please follow the local installation guide in the next section.
 
@@ -84,7 +85,9 @@ The following local installation guide is adapted to Debian/Ubuntu and CentOS/RH
 ```bash
 uname -a
 ```
+
 - For Debian/Ubuntu, run:
+
 ```bash
 sudo apt-get update
 sudo apt-get install libldap2-dev libsasl2-dev
@@ -116,13 +119,11 @@ Once installation has completed, clone your repository to your local machine and
 1. In your terminal, change the working directory to the location where you want the cloned directory.
 1. Type `git clone` and paste the copied URL.
 
-```
-$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
-```
+[git clone](https://github.com/YOUR-USERNAME/YOUR-REPOSITORY)
 
-6. Press **Enter** to create your local clone.
-7. Change the working directory to the cloned directory.
-8. Install dependencies by running:
+1. Press **Enter** to create your local clone.
+2. Change the working directory to the cloned directory.
+3. Install dependencies by running:
 
 ```bash
 pip3 install -r requirements.txt
@@ -151,20 +152,21 @@ Now, it's necessary to install `node` to get the `npm` packages we have provided
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
-2. Install `node`:
+1. Install `node`:
 
 ```bash
 brew install node
 ```
+
 Adapt the command to the package manager you have chosen if it's not homebrew.
 
-3. The `npm` packages needed are specified in `package.json` and `package-lock.json`. Navigate to the `secure-code-game` repository and install them by running:
+1. The `npm` packages needed are specified in `package.json` and `package-lock.json`. Navigate to the `secure-code-game` repository and install them by running:
 
 ```bash
 npm install --prefix Season-2/Level-4/ Season-2/Level-4/ && npm install --global mocha
 ```
 
-4. At this point, you can get started with Season-1 or Season-2 by navigating on the respective folders and reading the `README.md` file.
+1. At this point, you can get started with Season-1 or Season-2 by navigating on the respective folders and reading the `README.md` file.
 
 We recommend these free-of-charge additional extensions:
 
@@ -173,7 +175,7 @@ We recommend these free-of-charge additional extensions:
 
 For more information about cloning repositories, see "[Cloning a repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)."
 
-<footer>
+---
 
 <!--
   <<< Author notes: Footer >>>
@@ -182,7 +184,7 @@ For more information about cloning repositories, see "[Cloning a repository](htt
 
 ---
 
-Get help: Email us at securitylab-social@github.com &bull; [Review the GitHub status page](https://www.githubstatus.com/)
+Get help: Email us at <securitylab-social@github.com> &bull; [Review the GitHub status page](https://www.githubstatus.com/)
 
 &copy; 2024 GitHub &bull; [Code of Conduct](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md) &bull; [MIT License](https://gh.io/mit)
 
